@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,79 +28,216 @@
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+
+    <link rel="shortcut icon" href="http://www.far.be/wp-content/themes/FarDesignWp/favicon.ico">
 </head>
 
 <body>
 
 <div class="reveal">
 
-<!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
 
 <section>
-    <h1>Projet de Fin d'Etudes</h1>
+    <h1 style="line-height: 1.1em">Projet de Fin d'Études</h1>
 
-    <h3>Refonte du site <a href="wwww.far.be">www.far.be</a></h3>
+    <h3>Refonte du site <a href="wwww.far.be" style="margin-top: -0.15em">www.far.be</a></h3>
 
     <p>
-        <small>Présentation de <a href="http://anna.buffart.eu">Annabelle Buffart</a> / <a href="http://twitter.com/yoseihana">@yoseihana</a></small>
+        Présentation de <a href="http://anna.buffart.eu">Annabelle Buffart</a> / <a href="http://twitter.com/yoseihana">@yoseihana</a>
     </p>
 </section>
 
-<section>
-    <h2>Introduction</h2>
-
-    <p>
-        reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-        support for CSS 3D transforms to see it in its full glory.
-    </p>
-
-    <aside class="notes">
-        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-    </aside>
-</section>
-
-<!-- Example of nested vertical slides -->
 <section>
     <section>
-        <h2>Le client</h2>
+        <h2>Introduction</h2>
 
         <p>
-            Slides can be nested inside of other slides,
-            try pressing <a href="#" class="navigate-down">down</a>.
+            abDesign vous présente son tout dernier projet en date: <a href="www.far.be">www.far.be</a>
         </p>
-        <a href="#" class="image navigate-down">
-            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-        </a>
+        <img width=750 src="img/screenshot.jpg"/>
     </section>
     <section>
-        <h2>La FAR</h2>
+        <h3>À propos de abDesign</h3>
 
-        <p>Press down or up to navigate.</p>
+        <pre><code style="max-height: 550px;" class="javascript" data-trim>
+            var abDesign = {
+                name: 'Annabelle Buffart',
+                bachelor: [
+                    'Communication',
+                    'Infographie - web section'
+                ],
+                website: 'http://anna.buffart.eu',
+                twitter: '@yoseihana',
+                linkedin: 'http://be.linkedin.com/in/annabuffart',
+                jobs: {
+                    coFounder: 'Café Numérique Arlon',
+                    webIntegrator: 'VAConsulting (starting July 1st)'
+                },
+                passions: [
+                    'Web',
+                    'Geekerie',
+                    'Makeup',
+                    'Gaming'
+                ]
+            };
+        </code></pre>
     </section>
     <section>
-        <h2>Cahier des charges</h2>
+        <h3>Choix du sujet</h3>
 
-        <p>Cornify</p>
-        <a class="test" href="http://cornify.com">
-            <img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-        </a>
+        <p>
+            Avoir une vision concrète de mon futur professionnel.
+        </p>
+
+        <p>
+            Un projet avec un client, la Form'action André Renard.
+        </p>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Le client: FAR</h2>
+        <img src="img/PC300RO1.jpg" style="float: left; margin-right: 5%;"/>
+
+        <p style="margin-left: -2em; display: inline-block;">
+            ABSL au sein de la FGTB
+        </p>
+        <ul style="width: 50%;">
+            <li class="fragment roll-in" data-fragment-index="0" style="margin-bottom: 0.5em">
+                Centre
+                <ul>
+                    <li>
+                        de formations
+                    </li>
+                    <li>
+                        d'expertises
+                    </li>
+                    <li>
+                        de documentations et d'archives
+                    </li>
+
+                </ul>
+            </li>
+            <li class="fragment roll-in" data-fragment-index="1" style="margin-bottom: 0.5em">
+                Publication sur
+                <ul>
+
+                    <li>
+                        <a target="_blank" href="http://dautresreperes.typepad.com/">D'autres Repères</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.6com.be/4/actu_une.cfm">6com</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </section>
     <section>
-        <h2>La cible</h2>
+        <h3>Cahier des charges</h3>
 
-        <p>That's it, time to go back up.</p>
-        <a href="#/2" class="image">
-            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-        </a>
+        <p>Refonte du site <a href="http://oldfar.vps039.dgnus.net/" target="_blank">www.far.be</a></p>
+        <ul>
+            <li  style="margin-bottom: 0.5em">
+                Centre de ressources
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Mises à jour accessibles à tous
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Architecture du site définie
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Liens permanents dans toutes les pages
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Textes et photos fournies par la FAR
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Nouveau logo pour la Réalisation audiovisuelle
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Template emailing sur YMLP
+            </li>
+            <li style="margin-bottom: 0.5em">
+                jQuery Mobile
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Couleurs du logo
+            </li>
+        </ul>
     </section>
     <section>
-        <h2>Ancienne version</h2>
+        <h3>La cible</h3>
 
-        <p>That's it, time to go back up.</p>
-        <a href="#/2" class="image">
-            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-        </a>
+        <ul>
+            <li  style="margin-bottom: 0.5em">
+                Membres des formations
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Délégués syndicaux
+            </li>
+            <li style="margin-bottom: 0.5em">
+                Visiteurs lambdas
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Ancienne version</h3>
+        <a href="http://oldfar.vps039.dgnus.net/" target="_blank">http://oldfar.vps039.dgnus.net/</a>
+        <img src="img/accueilOld.jpg" />
+    </section>
+    <section>
+        <h3>Ancienne version</h3>
+         <pre style="margin: 15px 0 auto; width: 100%;"><code data-trim contenteditable style="font-size: 16px; margin-top: 20px; width: 100%;">
+             <table width="760" height="402" border="0" align="center" cellspacing="0"><tbody>
+             <tr>
+                 <td align="center" valign="top" bgcolor="#FFFFFF">
+                     <table width="100%" height="488" border="0" background="site 2009/images/logofarfond.jpg">
+                         <tbody>
+                         <tr>
+                             <td width="2%" height="21">&nbsp;</td><td colspan="2">&nbsp;</td><td width="1%">&nbsp;</td>
+                         </tr>
+                         <tr>
+                             <td height="289" rowspan="2">&nbsp;</td>
+                             <td width="72%" rowspan="2" align="left" valign="top">
+                                 <p class="Style7">La FAR en deux mots :<br></p>
+                                 <p class="Style8">
+                                     La FAR est une association sans but lucratif créée en 1963 à Liège (Belgique)[...]
+                                 </p>
+                             </td>
+                         </tr>
+                         </tbody></table>
+                 </td>
+             </tr>
+             </tbody></table>
+         </code></pre>
+        <ul>
+            <li class="fragment roll-in" data-fragment-index="0">
+                Style en ligne
+            </li>
+            <li class="fragment roll-in" data-fragment-index="1">
+                Nom des class
+            </li>
+            <li class="fragment roll-in" data-fragment-index="2">
+                Design de traitement de texte
+            </li>
+            <li class="fragment roll-in" data-fragment-index="3">
+                Architecture en tableaux
+            </li>
+        </ul>
+
+    </section>
+    <section>
+        <h3>Réaction</h3>
+
+        <p>
+            <img src="img/what.gif" width="350px" />
+        </p>
+        <blockquote>
+            "Y a du boulot"
+        </blockquote>
     </section>
 </section>
 
@@ -109,29 +246,69 @@
         <h2>Conception graphique</h2>
 
         <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
+            Site humain, pas de notions syndicales avec des métallos en chasubles rouges.
         </p>
+
+        <video controls="controls" src="video/jerome.mov"></video>
     </section>
     <section>
-        <h2>Design</h2>
+        <h3>Design</h3>
+        <div>
+            <p>Tonalités de rouge, bleu, gris et blanc</p>
+            <img src="img/kuler.jpg" height="200px">
+        </div>
 
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
+        <p class="fragment roll-in" data-fragment-index="1">Police:</p>
+        <ul class="fragment roll-in" data-fragment-index="1">
+            <li style="margin-bottom: 0.5em;" ><a href="http://www.fontsquirrel.com/fonts/amaranth" target="_blank">Amaranth</a></li>
+            <li style="margin-bottom: 0.5em;" ><a href="http://www.fontsquirrel.com/fonts/source-sans-pro" target="_blank">Source Sans Pro</a></li>
+            <li style="margin-bottom: 0.5em;" >
+                <a href="fontello/demo.html" target="_blank">Fontello</a>
+            </li>
+        </ul>
     </section>
     <section>
-        <h2>Accessibilités</h2>
+        <h3>Accessibilités</h3>
 
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
-    </section>
-    <section>
-        <h2>Utilisabilité</h2>
-
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
+        <ol>
+            <li style="margin-bottom: 0.25em;">
+                Navigation
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Organisation visuelle
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Cohérence
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Convention
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Information
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Compréhension
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Assistance
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Gestion des erreurs
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Rapidité
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Liberté
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Accessibilité technique
+            </li>
+            <li style="margin-bottom: 0.25em;">
+                Satisfaction de l'internaute
+            </li>
+        </ol>
+        <p><a href="http://www.far.be" target="_blank">www.far.be</a></p>
     </section>
 </section>
 
@@ -139,300 +316,168 @@
 <section>
     <section>
         <h2>Conception technique</h2>
-
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
     </section>
     <section>
-        <h2>CMS</h2>
-
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
+        <h3>CMS: Wordpress</h3>
+        <ul class="fragment roll-in" data-fragment-index="0">
+            <li>
+                Drupal était trop complexe pour les membres de la FAR
+            </li>
+            <li>
+                Un membre de l'équipe connait Wordpress
+            </li>
+            <li>
+                Point de vue professionnelle
+            </li>
+        </ul>
     </section>
     <section>
-        <h2>Plugins</h2>
+        <h3>Plug-ins</h3>
 
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
+        <p>Le site est construit avec le fichier function.php</p>
+
+        <p>Plug-in: gestion de membres sur une même adresse email</p>
     </section>
     <section>
-        <h2>Frameworks</h2>
-
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
-    </section>
-</section>
-<section>
-    <section>
-        <h2>Conception technique</h2>
-
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
-    </section>
-    <section>
-        <h2>CMS</h2>
-
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
-    </section>
-    <section>
-        <h2>Plugins</h2>
-
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
-    </section>
-    <section>
-        <h2>Frameworks</h2>
-
-        <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-        </p>
+        <h3>Frameworks</h3>
+        <ul class="fragment roll-in" data-fragment-index="0">
+            <li>
+                jQuery Mobile et  jQuery Validation
+            </li>
+            <li>
+                Less et semantic.gs
+            </li>
+        </ul>
     </section>
 </section>
 <section>
     <section>
         <h2>Conclusion</h2>
+    </section>
+    <section>
+        <h3>Difficultés</h3>
+        <img src="img/difficulte.gif"/>
+
+    </section>
+    <section>
+        <h3>Difficultés</h3>
+        <ul class="fragment roll-in" data-fragment-index="0">
+            <li>
+                Le client
+            </li>
+            <li >
+                Le temps
+            </li>
+            <li>
+                Le développement
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3 style="font-size: 2em;"><code>//TODO</code></h3>
+
+        <ul class="fragment roll-in" data-fragment-index="0">
+            <li>
+                Espace membre
+            </li>
+            <li>
+                CSS avec SASS
+            </li>
+            <li>
+                Guideline
+            </li>
+            <li>
+                Photos
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Analyse des objectifs</h3>
 
         <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
+            <a href="http://www.far.be/membres" target="_blank">Espace membre</a> avec centre de ressources des documents de formations
         </p>
     </section>
     <section>
-        <h2>Difficultés</h2>
+        <h3>Analyse des objectifs</h3>
 
         <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
+            Mise à jour possible par les membres de la FAR via <a href="http://www.far.be/wp-admin" target="_blank">l'administration personnalisée de Wordpress</a>
         </p>
     </section>
     <section>
-        <h2>Futur</h2>
+        <h3>Analyse des objectifs</h3>
 
         <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
+            Architecture de <a href="http://www.far.be" target="_blank">navigation</a> sur 2 lignes
         </p>
     </section>
     <section>
-        <h2>Analyse</h2>
+        <h3>Analyse des objectifs</h3>
 
         <p>
-            Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
+            Liens permanents disponibles en <a href="http://www.far.be" target="_blank">bas de page</a>
         </p>
     </section>
-</section>
-<section>
-    <h1>THE END</h1>
-
-    <h3>BY Annabelle Buffart</h3>
-</section>
-
-
-<!--
-<section>
-    <h2>Marvelous Unordered List</h2>
-    <ul>
-        <li>No order here</li>
-        <li>Or here</li>
-        <li>Or here</li>
-        <li>Or here</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Fantastic Ordered List</h2>
-    <ol>
-        <li>One is smaller than...</li>
-        <li>Two is smaller than...</li>
-        <li>Three!</li>
-    </ol>
-</section>
-
-<section data-markdown>
-    <script type="text/template">
-        ## Markdown support
-
-        For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-        ```
-        <section data-markdown>
-            ## Markdown support
-
-            For those of you who like that sort of thing.
-            Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-        </section>
-        ```
-    </script>
-</section>
-
-
-
-<section>
-    <section data-state="alert">
-        <h2>Global State</h2>
+    <section>
+        <h3>Analyse des objectifs</h3>
 
         <p>
-            Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-            will be added as a class to the document element when the slide is open. This lets you
-            apply broader style changes, like switching the background.
+            Nouveau logo
         </p>
-        <a href="#" class="image navigate-down">
-            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-        </a>
-    </section>
-    <section data-state="blackout">
-        <h2>"blackout"</h2>
-        <a href="#" class="image navigate-down">
-            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-        </a>
-    </section>
-    <section data-state="soothe">
-        <h2>"soothe"</h2>
-        <a href="#" class="image navigate-next">
-            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-        </a>
-    </section>
-</section>
-
-<section data-state="customevent">
-    <h2>Custom Events</h2>
-
-    <p>
-        Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-    </p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-                        Reveal.addEventListener( 'customevent', function() {
-                        console.log( '"customevent" has fired' );
-                        } );
-                    </code></pre>
-</section>
-
-<section>
-    <h2>Clever Quotes</h2>
-
-    <p>
-        These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-        &ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-    </p>
-    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-        &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-        reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-    </blockquote>
-</section>
-
-<section>
-    <h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-                        function linkify( selector ) {
-                        if( supports3DTransforms ) {
-
-                        var nodes = document.querySelectorAll( selector );
-
-                        for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-                        var node = nodes[i];
-
-                        if( !node.className ) ) {
-                        node.className += ' roll';
-                        }
-                        };
-                        }
-                        }
-                    </code></pre>
-    <p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-</section>
-
-<section>
-    <h2>Intergalactic Interconnections</h2>
-
-    <p>
-        You can link between slides internally,
-        <a href="#/2/3">like this</a>.
-    </p>
-</section>
-
-<section>
-    <section>
-        <h2>Fragmented Views</h2>
-
-        <p>Hit the next arrow...</p>
-
-        <p class="fragment">... to step through ...</p>
-        <ol>
-            <li class="fragment"><code>any type</code></li>
-            <li class="fragment"><em>of view</em></li>
-            <li class="fragment"><strong>fragments</strong></li>
-        </ol>
-
-        <aside class="notes">
-            This slide has fragments which are also stepped through in the notes window.
-        </aside>
+        <img src="img/logora.jpg" width=450 />
     </section>
     <section>
-        <h2>Fragment Styles</h2>
+        <h3>Analyse des objectifs </h3>
 
-        <p>There's a few styles of fragments, like:</p>
+        <p>
+            <a href="mailing.html" target="_blank">Template emailing</a> en accord avec le design du site
+        </p>
+    </section>
+    <section>
+        <h3>Analyse des objectifs</h3>
 
-        <p class="fragment grow">grow</p>
+        <p>
+            jQuery Mobile
+        </p>
+    </section>
+    <section>
+        <h3>Analyse des objectifs</h3>
 
-        <p class="fragment shrink">shrink</p>
-
-        <p class="fragment roll-in">roll-in</p>
-
-        <p class="fragment fade-out">fade-out</p>
-
-        <p class="fragment highlight-red">highlight-red</p>
-
-        <p class="fragment highlight-green">highlight-green</p>
-
-        <p class="fragment highlight-blue">highlight-blue</p>
+        <p>
+            <a href="http://www.far.be" target="_blank">Couleurs du logo</a> utilisées dans le site
+        </p>
+    </section>
+    <section>
+        <h3>Auto-évaluation</h3>
+        <ul class="fragment roll-in" data-fragment-index="0">
+            <li>
+                Apprentissage technique et humain
+            </li>
+            <li>
+                Avenir professionnel
+            </li>
+            <li>
+                Apprendre encore et toujours
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h3>Auto-évaluation</h3>
+        <blockquote>
+            Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.
+            And the only way to do great work is to love what you do.
+            If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+        </blockquote>
+        <p>Steve Jobs</p>
     </section>
 </section>
-
 <section>
-    <h2>Spectacular image!</h2>
-    <a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-        <img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-    </a>
+    <h1 style="margin-bottom: 0.5em;">THE END</h1>
+    <p style="margin-bottom: 1em;">Merci de votre attention</p>
+    <p style="margin-bottom: 1em;"><strong>Des questions?</strong></p>
+    <p><small>Proudly powered by <a href="http://lab.hakim.se/reveal-js/" target="_blank">reveal.js</small></p>
 </section>
-
-<section>
-    <h2>Export to PDF</h2>
-
-    <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-    <iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen></iframe>
-    <script>
-        document.getElementById('slideshare').attributeName = 'allowfullscreen';
-    </script>
-</section>
-
-<section>
-    <h2>Take a Moment</h2>
-
-    <p>
-        Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-        during a presentation.
-    </p>
-</section>
-
-<section>
-    <h2>Stellar Links</h2>
-    <ul>
-        <li><a href="http://slid.es">Try the online editor</a></li>
-        <li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-        <li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-    </ul>
-</section>
-
-<section>
-    <h1>THE END</h1>
-
-    <h3>BY Hakim El Hattab / hakim.se</h3>
-</section> -->
 
 </div>
 
@@ -446,7 +491,7 @@
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-        controls: false,
+        controls: true,
         progress: true,
         history: true,
         center: true,
